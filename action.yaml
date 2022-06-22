@@ -1,0 +1,17 @@
+name: 'Hola mundo'
+description: 'saluda y guarda fecha'
+inputs:
+  who-to-greet: #id del input
+    description: 'A quien saludar'
+    required: true
+    default: 'mundo'
+# lo que se devuelve de la github action (no es reque)
+outputs:
+  time: #id de salida
+    description: 'la fecha en la que nos conocimos'
+# donde va a correr
+runs:
+  using: 'docker' # usando docker
+  image: 'Dockerfile' # imagen de dockerhub
+  args:
+    - ${{ inputs.who-to-greet }}
