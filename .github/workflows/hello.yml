@@ -1,0 +1,21 @@
+# nombre del pipeline
+name: Say hello
+
+# en el evento push
+on:
+  push:
+    branches:
+      - main
+
+# trabajos
+jobs:
+  # nombre del trabajo: hello_world
+  hello_world:
+    # trabaja en ubuntu
+    runs-on: ubuntu-latest
+    
+    #pasos
+    steps:
+      - name: Echo mensaje
+        run: |
+          echo "hola perras"
