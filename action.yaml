@@ -1,5 +1,6 @@
 name: 'Hola mundo'
 description: 'saluda y guarda fecha'
+# inputs: args que se van a aceptar
 inputs:
   who-to-greet: #id del input
     description: 'A quien saludar'
