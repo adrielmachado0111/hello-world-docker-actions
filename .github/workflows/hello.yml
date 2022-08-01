@@ -19,3 +19,7 @@ jobs:
       - name: Echo mensaje
         run: |
           echo "hola perras"
+      - name: Dame la fecha perra
+        run: date
+      - run: ls -l
+      
